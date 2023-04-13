@@ -31,6 +31,11 @@ class GradientContainer extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            Image.asset(
+              'assets/images/dice-2.png',
+              width: 200,
+            ),
+            const SizedBox(height: 20),
             TextButton(
               onPressed: rollDice,
               style: TextButton.styleFrom(
