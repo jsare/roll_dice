@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'gradient_container.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home Page'),
-      ),
-      body: const Center(
-        child: SizedBox(
-          child: Text('Let\'s go make app'),
-        ),
+    return const Scaffold(
+      body: GradientContainer(
+        Color.fromARGB(255, 33, 5, 109),
+        Color.fromARGB(255, 68, 21, 149),
       ),
     );
   }
